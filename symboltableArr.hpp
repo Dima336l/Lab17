@@ -1,6 +1,7 @@
 #ifndef _SYMBOL_TABLE_ARR_
 #define _SYMBOL_TABLE_ARR_
 #include <vector>
+#include <cstddef>
 
 template <typename K, typename V>
 class SymbolTable {

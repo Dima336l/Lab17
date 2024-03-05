@@ -16,16 +16,16 @@ struct Node {
 };
 
 template <typename K, typename V>
-class SymbolTable {
+class SymbolTableLL {
 private:
   Node<K,V>* first;
   
 public:
-  SymbolTable() {
+  SymbolTableLL() {
     first = nullptr;
   }
 
-  ~SymbolTable() {
+  ~SymbolTableLL() {
     while (first != nullptr) {
       Node<K,V>* next = first->next;
       delete first;

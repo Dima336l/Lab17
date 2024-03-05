@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
   }
 
   size_t min_length = atoi(argv[1]);
-  SymbolTable<std::string, size_t> st;
+  SymbolTableLL<std::string, size_t> st;
   
   std::string word = "";
   while (std::cin >> word) {
